@@ -4,11 +4,11 @@ import static com.sun.tools.doclint.Entity.and;
 
 public class SQRService {
 
-    public int calcSqrt (int a, int b) {
-        int lim = (int) Math.sqrt(b);
+    public int calcSqrt(int from, int to) {
+        int lim = (int) Math.sqrt(to);
         int sqrs = 0;
-        for (int i = 1; i <=99; i++) {
-            if (i*i >= a && i*i <= b) {
+        for (int i = 1; i <= 99; i++) {
+            if (i * i >= from && i * i <= to) {
                 sqrs++;
             }
         }
