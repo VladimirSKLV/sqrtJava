@@ -2,8 +2,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ru.netology.javaqamvn.services.SQRService;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class SQRServiceTest {
 
     @Test
@@ -15,7 +13,7 @@ public class SQRServiceTest {
     }
 
     @Test
-    public void calcSqrFalse() {
+    public void calcSqrFal() {
         SQRService service = new SQRService();
         int expected = 10;
         int actual = service.calcSqrt(10, 99);
